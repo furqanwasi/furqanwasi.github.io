@@ -1,202 +1,177 @@
----
-layout: home
-title: GitHub and Government
-description: Make government better, together. Stories of open source, open data, and open government.
-org_count: 60
-permalink: /
----
+<!DOCTYPE html>
+<html lang="en">
 
-  <div class="container-lg p-responsive py-4 py-lg-6 my-xl-4 text-center">
-    <h1 class="alt-h1 mb-2 text-white">How agencies build&nbsp;software</h1>
-    <p class="f2-light text-white">Collaborate on code, data, policy, or procurement within your agency or with the&nbsp;public.</p>
-  </div>
-</div><!-- ends .full-width that started in header.html -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Academic Webpage" />
+    <meta name="author" content="senli1073" />
+    <title id="title"></title>
 
-<div class="container-lg p-responsive">
-  <div class="Box clearfix p-4 p-sm-5 col-md-7 mx-auto mt-6">
-    <div class="float-left">
-      <img class="d-block pr-4" style="width: 80px;" alt="FedRAMP Logo" src="{{"/assets/img/Fedramp-logo.svg" | relative_url}}">
+    <!-- Icon -->
+    <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
+
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
+        rel="stylesheet" />
+
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link type="text/css" href="static/css/styles.css" rel="stylesheet" />
+    <link type="text/css" href="static/css/main.css" rel="stylesheet" />
+
+    <!-- Bootstrap core JS-->
+    <script type="text/javascript" src="static/js/bootstrap.bundle.min.js"></script>
+
+    <!-- For Compatability -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    
+    <!-- Markdown -->
+    <script type="text/javascript" src="static/js/marked.min.js"></script>
+
+    <!-- Mathematics -->
+    <script>
+        // See https://docs.mathjax.org/en/latest/index.html for more details.
+        MathJax = {
+            tex: {
+                packages: {},              // extensions to use
+                inlineMath: [              // start/end delimiter pairs for in-line math
+                    ['$', '$'],
+                    ['\\(', '\\)']
+                ],
+                displayMath: [             // start/end delimiter pairs for display math
+                    ['$$', '$$'],
+                    ['\\[', '\\]']
+                ],
+                processEscapes: false,      // use \$ to produce a literal dollar sign
+                processEnvironments: true, // process \begin{xxx}...\end{xxx} outside math mode
+                processRefs: true,         // process \ref{...} outside of math mode
+                digits: /^(?:[0-9]+(?:\{,\}[0-9]{3})*(?:\.[0-9]*)?|\.[0-9]+)/,    // pattern for recognizing numbers
+                tags: 'all',              // or 'ams' or 'all'
+                tagSide: 'right',          // side for \tag macros
+                tagIndent: '0.8em',        // amount to indent tags
+                useLabelIds: true,         // use label name rather than tag for ids
+                maxMacros: 10000,          // maximum number of macro substitutions per expression
+                maxBuffer: 5 * 1024,       // maximum size for the internal TeX string (5K)
+                // baseURL:                   // URL for use with links to tags (when there is a <base> tag in effect)
+                // (document.getElementsByTagName('base').length === 0) ? '' : String(document.location).replace(/#.*$/, ''),
+                formatError:               // function called when TeX syntax errors occur
+                    (jax, err) => jax.formatError(err)
+            }
+        };
+    </script>
+    <script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <!-- Core JS-->
+    <script type="text/javascript" src="static/js/scripts.js"></script>
+    <script type="text/javascript" src="static/js/js-yaml.min.js"></script>
+
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+        <div class="container px-5">
+            <a id="page-top-title" class="navbar-brand fw-bold" href="#page-top"></a>
+            <!-- <a href="#page-top"><img src="static/assets/img/CUMT_LOGO.svg" style="width: 11rem;"></a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                MENU
+                <i class="bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link me-lg-3" href="#page-top">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-lg-3" href="#publications">PUBLICATIONS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-lg-3" href="#awards">AWARDS</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Top Section -->
+    <section class="top-section" style="background-image: url('static/assets/img/background.jpeg');">
+        <div class="top-section-content">
+            <div class="container px-5">
+                <h2 id="top-section-bg-text" class="text-white display-3 lh-1 font-alt"></h2>
+            </div>
+        </div>
+    </section>
+    <!-- Top Section -->
+
+    <!-- Photo -->
+    <div class="container px-5">
+        <div id="avatar">
+            <img class="shadow" src="static/assets/img/photo.png">
+        </div>
     </div>
-    <div class="overflow-hidden">
-      <p>GitHub is now Federal Risk and Authorization Management Program (FedRAMP) authorized.
-      </p>
-      <a href="{{"/fedramp/" | relative_url}}">Learn More {% octicon chevron-right height:18 class:"d-inline fill-blue ml-1" %}</a>
-    </div>
-  </div>
-</div>
+    <!-- Photo -->
+    
+    <!-- Home -->
+    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="home">
+        <div class="container px-5">
+            <header>
+                <h2 id="home-subtitle"> </h2>
+                <!-- <span class="bi bi-list"></span> -->
+            </header>
+            <div class="main-body" id="home-md"></div>
+        </div>
+    </section>
+    <!-- Home -->
 
-<section class="container-lg p-responsive py-5 py-md-6 my-lg-6">
-  <div class="clearfix gutter-spacious">
-    <div class="mb-3 mb-md-5 col-md-6 float-left">
-      <h2 class="alt-h3 mb-2">
-        {% octicon terminal height:28 class:"fill-blue d-inline mr-2" aria-label:terminal %}
-        Collaborate on code
-      </h2>
-      <p class="text-gray">Code collaboration and review are built into the development process with GitHub. Share work, discuss changes, and get feedback in one place to write quality code.</p>
-    </div>
-    <div class="mb-3 mb-md-5 col-md-6 float-left">
-      <h2 class="alt-h3 mb-2">
-        {% octicon server height:28 class:"fill-blue d-inline mr-2" aria-label:server %}
-        On your servers or in the cloud
-      </h2>
-      <p class="text-gray">Run GitHub Enterprise on your servers as a virtual appliance, on <a href="{{"/aws-govcloud.html" | relative_url}}">AWS GovCloud</a> or Azure, or let us host the code for you on GitHub.com, whatever your security requires.</p>
-    </div>
-  </div>
+    <!-- Publications -->
+    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="publications">
+        <div class="container px-5">
+            <header>
+                <h2 id="publications-subtitle"><i class="bi bi-file-text-fill"></i>&nbsp;PUBLICATIONS</h2>
+            </header>
+            <div class="main-body" id="publications-md"></div>
 
-  <div class="clearfix gutter-spacious">
-    <div class="mb-3 mb-md-5 col-md-6 float-left">
-      <h2 class="alt-h3 mb-2">
-        {% octicon beaker height:28 class:"fill-blue d-inline mr-2" aria-label:beaker %}
-        Foster innovation at your agency
-      </h2>
-      <p class="text-gray">GitHub enables you to easily accept, continuously test, and rapidly deploy new ideas to build better software, faster.</p>
-    </div>
-    <div class="mb-3 mb-md-5 col-md-6 float-left">
-      <h2 class="alt-h3 mb-2">
-        {% octicon tools height:28 class:"fill-blue d-inline mr-2" aria-label:tools %}
-        Software built your way
-      </h2>
-      <p class="text-gray">Integrate third party tools, from project management to continuous integration, to build software in the way that works best for your agency.</p>
-    </div>
-  </div>
+        </div>
+    </section>
+    <!-- Publications  -->
 
-  <div class="clearfix gutter-spacious">
-    <div class="mb-3 mb-md-5 col-md-6 float-left">
-      <h2 class="alt-h3 mb-2">
-        {% octicon code height:28 class:"fill-blue d-inline mr-2" aria-label:code %}
-        InnerSource inside your agency
-      </h2>
-      <p class="text-gray">Build your agency’s software the way open source maintainers build theirs. Transparency and code reuse can help your team build better code.</p>
-    </div>
-    <div class="mb-3 mb-md-5 col-md-6 float-left">
-      <h2 class="alt-h3 mb-2">
-        {% octicon lock height:28 class:"fill-blue d-inline mr-2" aria-label:lock %}
-        Enterprise controls that agencies need
-      </h2>
-      <p class="text-gray">Encourage teams to work together while providing essential controls for employees and contractors alike using organizations and LDAP or CAS.</p>
-    </div>
-  </div>
+    <!-- Awards -->
+    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="awards">
+        <div class="container px-5">
+            <header>
+                <h2 id="awards-subtitle"><i class="bi bi-award-fill"></i>AWARDS </h2>
+            </header>
+            <div class="main-body" id="awards-md"></div>
 
-  <div class="clearfix gutter-spacious">
-    <div class="mb-3 mb-md-5 col-md-6 float-left">
-      <h2 class="alt-h3 mb-2">
-        {% octicon globe height:28 class:"fill-blue d-inline mr-2" aria-label:globe %}
-        Public engagement, developer community
-      </h2>
-      <p class="text-gray">Engage with more than 40 million developers using GitHub. Publish open source software on GitHub.com. Onboard, train, and recruit developers with ease.</p>
-    </div>
-    <div class="mb-3 mb-md-5 col-md-6 float-left">
-      <h2 class="alt-h3 mb-2">
-        {% octicon checklist height:28 class:"fill-blue d-inline mr-2" aria-label:checklist %}
-        Skip the paperwork
-      </h2>
-      <p class="text-gray">GitHub.com's terms of service are approved by the GSA and most plans fall below the micro-purchase threshold. Purchase GitHub Enterprise with major government acquisition schedules.</p>
-    </div>
-  </div>
-
-  <p class="text-center">
-    <a href="https://github.com/features" class="btn btn-outline">Learn more about GitHub &rarr;</a>
-  </p>
-</section>
+        </div>
+    </section>
+    <!-- Awards -->
 
 
-<section class="bg-gray-light">
-  <div class="container-lg p-responsive py-5 py-md-6 ">
+    <!-- Footer-->
+    <footer class="bg-bottom text-center py-5">
+        <div class="container px-5">
+            <div class="text-white-50 small">
+                <div id="copyright-text" class="mb-2"></div>
+                <a id="github-link" href="https://github.com/senli1073">Github</a>
+                <span class="mx-1">&middot;</span>
+                <a id="license-link" href="https://github.com/senli1073/senli1073.github.io/blob/main/LICENSE">License</a>
+            </div>
+        </div>
+    </footer>
 
-    <h2 class="alt-h2 text-center mb-3 mt-lg-6" id="more-than-just-code">More than just code</h2>
-    <p class="alt-lead text-gray text-center col-md-10 mx-auto">Agencies use GitHub to engage developers and collaborate with the public on open source, open data and open government efforts. GitHub even renders common formats like <a href="https://github.blog/2014-02-14-rendered-prose-diffs/">text</a>, <a href="https://help.github.com/articles/rendering-csv-and-tsv-data">CSV</a>, <a href="https://github.blog/2015-03-17-pdf-viewing/">PDF</a>, <a href="https://help.github.com/articles/mapping-geojson-files-on-github">geospatial data</a> and Jupyter Notebooks.</p>
+</body>
 
-    <div class="my-4 my-lg-6 clearfix gutter-spacious">
-      <div class="col-md-4 float-left animate-out mb-4">
-        <h3 class="alt-h3 mb-3">Open Source</h3>
-        <p><a href="https://github.com/showcases/government" target="_blank">
-          <img src="assets/img/open-source.png" class="img-border" alt="Pull request launching gov.uk"/></a>
-        </p>
-        <small>The UK Government launched GOV.UK with a pull request</small>
-      </div>
-      <div class="col-md-4 float-left animate-out mb-4">
-        <h3 class="alt-h3 mb-3">Open Data</h3>
-        <p><a href="https://github.com/showcases/open-data" target="_blank">
-          <img src="assets/img/open-data.png" class="img-border" alt="GeoJSON diff of Illinois 4th Congressional District"/></a>
-        </p>
-        <small>CFPB builds data visualizations and analysis tools with GitHub</small>
-      </div>
-      <div class="col-md-4 float-left animate-out mb-4">
-        <h3 class="alt-h3 mb-3">Open Government</h3>
-        <p><a href="https://github.com/showcases/policies" target="_blank">
-          <img src="assets/img/open-gov.png" class="img-border" alt="Project Open Data"/></a>
-        </p>
-        <small>Find the US government’s open source projects at <a href="https://code.gov/">Code.gov</a></small>
-      </div>
-    </div>
-
-    <p class="text-center">
-      <a href="https://github.com/collections/government" class="btn btn-outline">See more showcases &rarr;</a>
-    </p>
-
-  </div>
-</section>
-
-<section class="">
-  <div class="container-lg p-responsive py-5 py-md-6 ">
-    <h2 class="alt-h2 text-center mb-3 mt-lg-6" id="join-the-revolution">Join the Revolution</h2>
-    <p class="alt-lead text-gray text-center col-md-10 mx-auto">Join the thousands of government organizations around the world who collaborate on code, data, policy, and more. See the rest of the <a href="/community">GitHub government community</a>.</p>
-  </div>
-  <div style="overflow: hidden;">
-    {% assign count = 0 %}
-    {% for group in site.data.governments %}
-      {% for org in group[1] %}
-        {% assign count = count | plus:1 %}
-      {% endfor %}
-    {% endfor %}
-    <div class="featured-orgs text-center p-2 m-2">
-      {% for org in site.featured_orgs %}
-      <a href="https://github.com/{{ org }}" class="animate-in">{% avatar user=org size=80 %}</a>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
-<section id="get-started" class="mini-section mt-6">
-  <div class="container-lg p-responsive">
-    <h2 class="alt-h2 text-center mb-3 mt-lg-6">Get started today</h2>
-    <p class="alt-lead text-gray text-center col-md-10 mx-auto">Create a free account to get started with GitHub. <a href="mailto:government@github.com">Contact us</a> to learn more about hosting your own GitHub instance.</p>
-
-    <div class="mt-md-6 clearfix gutter-spacious">
-      <div class="mb-4 col-md-6 float-left">
-        <h3 class="alt-h3 mb-2">Sign up for an account</h3>
-        <p class="text-gray"><a href="https://github.com/signup/free" target="_blank">Sign up</a> for an individual GitHub account for free.</p>
-        <p class="text-gray">If you have a personal GitHub account, simply <a href="https://government-community.githubapp.com/government">add and confirm</a> your government email.</p>
-      </div>
-      <div class="mb-4 col-md-6 float-left">
-        <h3 class="alt-h3 mb-2">Create an organization</h3>
-        <p class="text-gray">An organization is your official presence on GitHub. <a href="https://github.com/organizations/new">Create a free organization</a> after you log in. Open source projects stay free.</p>
-        <p class="text-gray">Prefer to host your own GitHub instance? <a href="mailto:government@github.com">Contact us</a> or <a href="https://enterprise.github.com">request a free trial</a> to get started.
-      </div>
-    </div>
-    <div class="mb-md-6 clearfix gutter-spacious">
-      <div class="mb-4 col-md-6 float-left">
-        <h3 class="alt-h3 mb-2">Join the Peer Group</h3>
-        <p class="text-gray">Join the <a href="https://government-community.githubapp.com/government">semi-private group</a> of government employees using GitHub to share best practices for software collaboration.</p>
-        <p class="text-gray">You will have access once the government email associated with your account is verified.
-      </div>
-      <div class="mb-4 col-md-6 float-left">
-        <h3 class="alt-h3 mb-2">Learn More</h3>
-        <p class="text-gray">Browse GitHub training resources at <a href="https://training.github.com">training.github.com</a>.</p>
-        <p class="text-gray">Contact <a href="mailto:training@github.com">training@github.com</a> to bring GitHub training to your team.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section id="contact-a-human" class="bg-gray-light">
-  <div class="container-lg p-responsive py-5 py-md-6 text-center">
-    <span class="text-center">
-      {% octicon person height:42 class:"d-block mx-auto mb-4 text-center fill-gray" aria-label:person %}
-    </span>
-    <h3 class="alt-h2 mb-4">Talk to a human</h3>
-    <p>Email <a href="mailto:government@github.com">government@github.com</a> to talk to GitHub's government team.</p>
-    <p><a href="https://government-community.githubapp.com/government">Post a question</a> in the government community to get feedback from other GitHub users in government.</p>
-  </div>
-</section>
+</html>
